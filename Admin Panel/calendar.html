@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Calendar - Vector Admin</title>
+
+    <!-- BOOTSTRAP -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    />
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar" id="sidebar">
+<div class="logo-area">
+
+                <div class="logo-text">
+                    <h4>Vector Admin</h4>
+                </div>
+
+                 <button class="collapse-btn d-none d-lg-flex" id="collapseBtn">
+            <i class="bi bi-list"></i>
+        </button>
+
+            </div>
+
+            <ul class="menu">
+
+    <li>
+        <a href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="analytics.html">
+            <i class="bi bi-bar-chart-line"></i>
+            <span>Analytics</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="users.html">
+            <i class="bi bi-people"></i>
+            <span>Users</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="products.html">
+            <i class="bi bi-box"></i>
+            <span>Products</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="kanban.html">
+            <i class="bi bi-kanban"></i>
+            <span>Kanban</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="calendar.html">
+            <i class="bi bi-calendar-event"></i>
+            <span>Calendar</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="chat.html">
+            <i class="bi bi-chat-dots"></i>
+            <span>Chat</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="files.html">
+            <i class="bi bi-folder2-open"></i>
+            <span>Files</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="settings.html">
+            <i class="bi bi-gear"></i>
+            <span>Settings</span>
+        </a>
+    </li>
+
+</ul>
+        </aside>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- MAIN -->
+
+        <main class="main">
+
+            <!-- NAVBAR -->
+
+            <nav class="top-navbar">
+
+                <div class="nav-left">
+
+                    <button class="menu-btn" id="menuBtn">
+                        <i class="bi bi-list"></i>
+                    </button>
+
+                    <h5 class="mb-0">
+                        Calendar & Events
+                    </h5>
+
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#eventModal"
+                >
+
+                    <i class="bi bi-plus-lg"></i>
+
+                    Add Event
+
+                </button>
+
+            </nav>
+
+            <!-- CONTENT -->
+
+            <div class="content container-fluid">
+
+                <div class="row g-4">
+
+                    <!-- CALENDAR -->
+
+                    <div class="col-lg-8">
+
+                        <div class="custom-card">
+
+                            <!-- TOP -->
+
+                            <div class="calendar-top">
+
+                                <h4>
+                                    May 2026
+                                </h4>
+
+                                <div class="calendar-actions">
+
+                                    <button class="btn btn-light">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+
+                                    <button class="btn btn-light">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- DAYS -->
+
+                            <div class="calendar-grid calendar-days">
+
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+
+                            </div>
+
+                            <!-- DATES -->
+
+                            <div class="calendar-grid">
+
+                                <div class="calendar-date muted">27</div>
+                                <div class="calendar-date muted">28</div>
+                                <div class="calendar-date muted">29</div>
+                                <div class="calendar-date muted">30</div>
+
+                                <div class="calendar-date">
+                                    1
+                                </div>
+
+                                <div class="calendar-date">
+                                    2
+                                </div>
+
+                                <div class="calendar-date">
+                                    3
+                                </div>
+
+                                <div class="calendar-date">
+                                    4
+                                </div>
+
+                                <div class="calendar-date active-date">
+
+                                    5
+
+                                    <div class="calendar-event">
+                                        Meeting
+                                    </div>
+
+                                </div>
+
+                                <div class="calendar-date">
+                                    6
+                                </div>
+
+                                <div class="calendar-date">
+                                    7
+                                </div>
+
+                                <div class="calendar-date">
+
+                                    8
+
+                                    <div class="calendar-event purple-event">
+                                        Design
+                                    </div>
+
+                                </div>
+
+                                <div class="calendar-date">
+                                    9
+                                </div>
+
+                                <div class="calendar-date">
+                                    10
+                                </div>
+
+                                <div class="calendar-date">
+                                    11
+                                </div>
+
+                                <div class="calendar-date">
+                                    12
+                                </div>
+
+                                <div class="calendar-date">
+                                    13
+                                </div>
+
+                                <div class="calendar-date">
+                                    14
+                                </div>
+
+                                <div class="calendar-date">
+                                    15
+                                </div>
+
+                                <div class="calendar-date">
+                                    16
+                                </div>
+
+                                <div class="calendar-date">
+                                    17
+                                </div>
+
+                                <div class="calendar-date">
+                                    18
+                                </div>
+
+                                <div class="calendar-date">
+                                    19
+                                </div>
+
+                                <div class="calendar-date">
+                                    20
+                                </div>
+
+                                <div class="calendar-date">
+                                    21
+                                </div>
+
+                                <div class="calendar-date">
+                                    22
+                                </div>
+
+                                <div class="calendar-date">
+                                    23
+                                </div>
+
+                                <div class="calendar-date">
+                                    24
+                                </div>
+
+                                <div class="calendar-date">
+                                    25
+                                </div>
+
+                                <div class="calendar-date">
+                                    26
+                                </div>
+
+                                <div class="calendar-date">
+                                    27
+                                </div>
+
+                                <div class="calendar-date">
+                                    28
+                                </div>
+
+                                <div class="calendar-date">
+                                    29
+                                </div>
+
+                                <div class="calendar-date">
+                                    30
+                                </div>
+
+                                <div class="calendar-date">
+                                    31
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- UPCOMING -->
+
+                    <div class="col-lg-4">
+
+                        <div class="custom-card">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <h5 class="mb-0">
+                                    Upcoming Events
+                                </h5>
+
+                                <i class="bi bi-three-dots"></i>
+
+                            </div>
+
+                            <!-- EVENT -->
+
+                            <div class="upcoming-event">
+
+                                <div class="event-dot blue-dot"></div>
+
+                                <div>
+
+                                    <h6>
+                                        Team Meeting
+                                    </h6>
+
+                                    <p>
+                                        10:00 AM - Zoom Meeting
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- EVENT -->
+
+                            <div class="upcoming-event">
+
+                                <div class="event-dot purple-dot"></div>
+
+                                <div>
+
+                                    <h6>
+                                        UI Review
+                                    </h6>
+
+                                    <p>
+                                        1:30 PM - Design Team
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- EVENT -->
+
+                            <div class="upcoming-event">
+
+                                <div class="event-dot green-dot"></div>
+
+                                <div>
+
+                                    <h6>
+                                        Client Presentation
+                                    </h6>
+
+                                    <p>
+                                        4:00 PM - Conference Room
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- SCHEDULE -->
+
+                        <div class="custom-card mt-4">
+
+                            <h5 class="mb-4">
+                                Schedule
+                            </h5>
+
+                            <div class="schedule-item">
+
+                                <span>
+                                    09:00
+                                </span>
+
+                                <div>
+                                    Dashboard Planning
+                                </div>
+
+                            </div>
+
+                            <div class="schedule-item">
+
+                                <span>
+                                    11:30
+                                </span>
+
+                                <div>
+                                    Team Discussion
+                                </div>
+
+                            </div>
+
+                            <div class="schedule-item">
+
+                                <span>
+                                    02:00
+                                </span>
+
+                                <div>
+                                    Client Feedback
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+    <footer class="admin-footer">
+
+    <p>
+        © 2026 Nexus Admin Dashboard
+    </p>
+
+</footer>
+
+        </main>
+
+    </div>
+
+    <!-- EVENT MODAL -->
+
+    <div
+        class="modal fade"
+        id="eventModal"
+        tabindex="-1"
+    >
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Add Event
+                    </h5>
+
+                    <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                    ></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Event Title
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                            />
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Date
+                            </label>
+
+                            <input
+                                type="date"
+                                class="form-control"
+                            />
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Time
+                            </label>
+
+                            <input
+                                type="time"
+                                class="form-control"
+                            />
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Cancel
+                    </button>
+
+                    <button class="btn btn-primary">
+                        Save Event
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    
+
+
+
+</div>
+
+    <!-- JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
