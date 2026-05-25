@@ -18,4 +18,4 @@ Modern responsive admin dashboard UI built using:
 
 ## Live Demo
 
-nova-admin-dashboard-ui.netlify.app
+https://nova-admin-dashboard-ui.netlify.app/
